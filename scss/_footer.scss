@@ -1,0 +1,11 @@
+footer {
+	background-color: $color-primary;
+	color: #fff;
+	position: relative;
+
+	@media screen and (max-width: $break-md) {
+		.footer-bottom {
+			display: block !important;
+		}
+	}
+}
