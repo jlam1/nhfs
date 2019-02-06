@@ -129,6 +129,9 @@ main {
 .bg-muted {
   background-color: #f4f5f6 !important; }
 
+.bg-transparent {
+  background-color: transparent !important; }
+
 .color-primary {
   color: #00457c; }
 
@@ -139,7 +142,7 @@ main {
 .underline-custom:after {
   content: '';
   margin-top: 8px;
-  height: 2px;
+  height: 1px;
   background-color: #fff;
   display: block; }
 
@@ -147,7 +150,7 @@ main {
   width: 1em; }
 
 .underline-custom.underline-sm:after {
-  width: 2em; }
+  width: 1.5em; }
 
 .underline-custom.underline-md:after {
   width: 3em; }
@@ -155,8 +158,8 @@ main {
 .underline-custom.underline-lg:after {
   width: 4em; }
 
-.underline-custom.underline-primary:after {
-  background-color: #00457c; }
+.underline-custom.underline-default:after {
+  background-color: #fff; }
 
 .underline-custom.underline-primary:after {
   background-color: #00457c; }
@@ -175,31 +178,129 @@ main {
   transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   background-size: 200% 100%;
   background-position: 100%;
-  font-weight: 500; }
+  font-weight: 600;
+  padding: 15px 35px;
+  font-size: 1.1em;
+  background-image: linear-gradient(to right, #00457c 50%, #f29200 50%); }
 
 .custom-btn:hover {
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0, 0, 0, 1);
   background-position: 0%; }
 
-.custom-btn {
-  font-size: 1.5em;
-  background-image: linear-gradient(to right, #00457c 50%, #f29200 50%); }
+img.social-icon {
+  width: 30px; }
 
 @media screen and (max-width: 992px) {
-  main {
-    margin-top: 60px; } }
-
-@media screen and (max-width: 576px) {
-  a.custom-btn {
+  .custom-btn {
+    display: block;
     width: 100%; } }
 
-footer {
-  background-color: #00457c;
-  color: #fff;
+@media screen and (max-width: 576px) {
+  .custom-btn {
+    display: block;
+    width: 100%; } }
+
+header .custom-btn {
+  padding: 10px 35px; }
+
+header nav.navbar {
   position: relative; }
-  @media screen and (max-width: 992px) {
-    footer .footer-bottom {
-      display: block !important; } }
+  header nav.navbar a.navbar-brand {
+    position: absolute;
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: -60px; }
+    header nav.navbar a.navbar-brand img {
+      border: 10px solid #fff;
+      border-radius: 50%;
+      transition: max-width 0.3s ease-in-out; }
+  header nav.navbar ul.navbar-nav li.nav-item a.nav-link {
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 15px 20px; }
+  header nav.navbar ul.navbar-nav li.nav-item:hover {
+    background-color: #f29200; }
+
+header.on-scroll nav.navbar a.navbar-brand {
+  position: absolute;
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  top: -60px; }
+  header.on-scroll nav.navbar a.navbar-brand img {
+    max-width: 100px; }
+
+footer {
+  border-top: 5px #f29200 solid; }
+  footer ul.contact-us-links > li i.fa {
+    color: #f29200; }
 
 /* Pages */
+.contact-form {
+  background-image: url("../assets/backgrounds/bg_get_involved.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .contact-form .form-wrapper {
+    border-radius: 15px; }
+  .contact-form .custom-btn {
+    -webkit-appearance: none !important; }
+  @media screen and (max-width: 992px) {
+    .contact-form .form-wrapper {
+      width: 100% !important; } }
+
+.card a {
+  text-decoration: none; }
+
+.card a:hover {
+  color: #f29200 !important; }
+
+.card .card-body .card-title {
+  font-size: 1.1em;
+  line-height: 28px;
+  font-weight: 500; }
+
+.area-of-excellence p.lead-description {
+  font-size: 1.5em;
+  line-height: 40px; }
+
+.area-of-excellence ul > li {
+  display: inline; }
+
+.area-of-excellence img.aoe-icon {
+  width: 90px;
+  height: 90px;
+  padding: 20px; }
+
+@media screen and (max-width: 992px) {
+  .area-of-excellence ul > li {
+    display: block; }
+  .area-of-excellence p.lead-description {
+    width: 100% !important; } }
+
+.at-a-glance {
+  background-image: url("../assets/backgrounds/bg_at_a_glance.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .at-a-glance .status img.status-icon {
+    height: 50px; }
+  .at-a-glance .status .status-info {
+    font-size: 3em; }
+  .at-a-glance .status .sub-small {
+    font-size: 0.5em; }
+  .at-a-glance .status span.vertical-dotted-lines {
+    position: absolute;
+    right: -50px;
+    top: 45px;
+    letter-spacing: 8px;
+    display: block;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  @media screen and (max-width: 576px) {
+    .at-a-glance .status span.vertical-dotted-lines {
+      display: none; } }

@@ -1,0 +1,49 @@
+header {
+	.custom-btn {
+		padding: 10px 35px;
+	}
+	nav.navbar {
+		position: relative;
+		a.navbar-brand {
+			position: absolute;
+			z-index: 999;
+			position: absolute;
+			left: 0;
+			top: -60px;
+			img {
+				border: 10px solid #fff;
+				border-radius: 50%;
+				transition: max-width 0.3s ease-in-out;
+			}
+		}
+
+		ul.navbar-nav {
+			li.nav-item {
+				a.nav-link {
+					color: #fff;
+					font-weight: 600;
+					font-size: 13px;
+					padding: 15px 20px;
+				}
+			}
+			li.nav-item:hover {
+				background-color: $color-secondary;
+			}
+		}
+	}
+}
+
+header.on-scroll {
+	nav.navbar {
+		a.navbar-brand {
+			position: absolute;
+			z-index: 999;
+			position: absolute;
+			left: 0;
+			top: -60px;
+			img {
+				max-width: 100px;
+			}
+		}
+	}
+}

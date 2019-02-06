@@ -1,0 +1,36 @@
+.contact-form {
+	background-image: url("../assets/backgrounds/bg_get_involved.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	.form-wrapper {
+		border-radius: 15px;
+	}
+	.custom-btn {
+		-webkit-appearance: none!important;
+	}
+	@media screen and (max-width: $break-md) {
+		.form-wrapper {
+			width: 100%!important;
+		}
+	}
+}
+
+.card {
+	a {
+		text-decoration: none;
+	}
+	a:hover {
+		color: $color-secondary!important;
+	}
+	.card-body {
+		.card-title {
+			font-size: 1.1em;
+			line-height: 28px;
+			font-weight: 500;
+		}
+	}
+	.card-footer {
+
+	}
+}

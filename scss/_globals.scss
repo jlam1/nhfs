@@ -2,9 +2,9 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 main {
+	// margin-top: 150px;
 	transition: margin-top 0.3s ease-in-out;
 }
-
 .bg-primary {
 	background-color: $color-primary!important;
 }
@@ -13,6 +13,9 @@ main {
 }
 .bg-muted {
 	background-color: $color-muted!important;
+}
+.bg-transparent {
+	background-color: transparent!important;
 }
 .color-primary {
 	color: $color-primary;
@@ -24,7 +27,7 @@ main {
 .underline-custom:after {
 	content: '';
 	margin-top: 8px;
-	height: 2px;
+	height: 1px;
 	background-color: #fff;
     display: block;
 }
@@ -32,7 +35,7 @@ main {
 	width: 1em;
 }
 .underline-custom.underline-sm:after {
-	width: 2em;
+	width: 1.5em;
 }
 .underline-custom.underline-md:after {
 	width: 3em;
@@ -40,8 +43,8 @@ main {
 .underline-custom.underline-lg:after {
 	width: 4em;
 }
-.underline-custom.underline-primary:after {
-	background-color: $color-primary;
+.underline-custom.underline-default:after {
+	background-color: #fff;
 }
 .underline-custom.underline-primary:after {
 	background-color: $color-primary;
@@ -61,26 +64,33 @@ main {
 	transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
 	background-size: 200% 100%;
 	background-position: 100%;
-	font-weight: 500;
+	font-weight: 600;
+	padding: 15px 35px;
+	font-size: 1.1em;
+	background-image: linear-gradient(to right, $color-primary 50%, $color-secondary 50%);
 }
 .custom-btn:hover {
 	text-decoration: none;
 	transition: all 0.3s cubic-bezier(0, 0, 0, 1);
 	background-position: 0%;
 }
-.custom-btn {
-	font-size: 1.5em;
-	background-image: linear-gradient(to right, $color-primary 50%, $color-secondary 50%);
+
+img.social-icon {
+	width: 30px;
 }
 
-
 @media screen and (max-width: $break-md) {
-	main {
-		margin-top: 60px;
+	// main {
+	// 	margin-top: 60px;
+	// }
+	.custom-btn {
+		display: block;
+		width: 100%;
 	}
 }
 @media screen and (max-width: $break-xs) {
-	a.custom-btn {
+	.custom-btn {
+		display: block;
 		width: 100%;
 	}
 }
