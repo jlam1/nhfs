@@ -61,8 +61,14 @@
 
 	@media screen and (max-width: $break-xs) {
 		.status {
+			.status-info {
+				font-size: 2em;
+			}
+			.sub-small {
+				font-size: 0.5em;
+			}
 			span.vertical-dotted-lines {
-				display: none;
+				right: -60px;
 			}
 		}
 	}

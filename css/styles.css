@@ -302,5 +302,9 @@ footer {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg); }
   @media screen and (max-width: 576px) {
+    .at-a-glance .status .status-info {
+      font-size: 2em; }
+    .at-a-glance .status .sub-small {
+      font-size: 0.5em; }
     .at-a-glance .status span.vertical-dotted-lines {
-      display: none; } }
+      right: -60px; } }
