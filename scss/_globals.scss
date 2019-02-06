@@ -2,7 +2,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 main {
-	// margin-top: 150px;
+	// margin-top: 110px;
 	transition: margin-top 0.3s ease-in-out;
 }
 .bg-primary {
@@ -79,18 +79,22 @@ img.social-icon {
 	width: 30px;
 }
 
+.box-shadow {
+	box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-15px {
+	border-radius: 15px;
+}
+
+
 @media screen and (max-width: $break-md) {
+	// main {
+	// 	margin-top: 90px;
+	// }
+}
+@media screen and (max-width: $break-xs) {
 	// main {
 	// 	margin-top: 60px;
 	// }
-	.custom-btn {
-		display: block;
-		width: 100%;
-	}
-}
-@media screen and (max-width: $break-xs) {
-	.custom-btn {
-		display: block;
-		width: 100%;
-	}
 }
