@@ -1,0 +1,24 @@
+.team {
+	ul.nav.nav-tabs {
+		li.nav-item {
+			border: 1px solid #f3f3f3;
+		}
+		li.nav-item > a {
+			border-radius: 0;
+			margin: 0;
+			color: #000;
+			font-weight: 500;
+			background-color: #fff;
+		}
+		li.nav-item:first-child > a {
+			border-radius: 25px 0 0 25px;
+		}
+		li.nav-item:last-child > a {
+			border-radius: 0 25px 25px 0;
+		}
+		li.nav-item > a.active, li.nav-item > a:hover {
+			color: #fff;
+			background-color: $color-secondary;
+		}
+	}
+}

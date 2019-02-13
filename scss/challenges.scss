@@ -1,0 +1,47 @@
+.current-challengers {
+	background-image: url("../assets/backgrounds/background_challenge.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	ul>li {
+		font-size: 0.9em;
+		margin-bottom: 5px !important;
+	}
+}
+
+.faqs {
+	.accordion {
+		.card {
+			.card-header {
+				position: relative;
+				button {
+					font-size: 1.1em;
+					padding: 0;
+				}
+				i.fa {
+					color: #fff;
+					padding: 10px;
+					border-radius: 50%;
+					height: 35px;
+					width: 35px;
+					font-size: 14px;
+					text-align: center;
+					background-color: $color-secondary;
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+			}
+			[data-toggle="collapse"] .fa:before {
+				content: "\f067";
+			}
+	
+			[data-toggle="collapse"].collapsed .fa:before {
+				content: "\f068";
+			}
+		}
+
+
+	}
+}

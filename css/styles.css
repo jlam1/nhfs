@@ -120,6 +120,43 @@ body {
 main {
   transition: margin-top 0.3s ease-in-out; }
 
+/**   Line-Height   */
+.lh-1e {
+  line-height: 1em !important; }
+
+.lh-1e1 {
+  line-height: 1.1em !important; }
+
+.lh-1e2 {
+  line-height: 1.2em !important; }
+
+.lh-1e3 {
+  line-height: 1.3em !important; }
+
+.lh-1e4 {
+  line-height: 1.4em !important; }
+
+.lh-1e5 {
+  line-height: 1.5em !important; }
+
+.lh-1e6 {
+  line-height: 1.6em !important; }
+
+.lh-1e7 {
+  line-height: 1.7em !important; }
+
+.lh-1e8 {
+  line-height: 1.8em !important; }
+
+.lh-2e {
+  line-height: 2em !important; }
+
+.lh-2e1 {
+  line-height: 2.1em !important; }
+
+.lh-2e5 {
+  line-height: 2.5em !important; }
+
 .bg-primary {
   background-color: #00457c !important; }
 
@@ -128,6 +165,9 @@ main {
 
 .bg-muted {
   background-color: #f4f5f6 !important; }
+
+.bg-gray {
+  background-color: #E9EAEC !important; }
 
 .bg-transparent {
   background-color: transparent !important; }
@@ -161,6 +201,9 @@ main {
 .underline-custom.underline-default:after {
   background-color: #fff; }
 
+.underline-custom.underline-dark:after {
+  background-color: #000; }
+
 .underline-custom.underline-primary:after {
   background-color: #00457c; }
 
@@ -173,10 +216,10 @@ main {
 
 /* BUTTONS */
 .custom-btn {
-  border-radius: 25px;
+  border-radius: 50px;
   border: 0;
   transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
-  background-size: 200% 100%;
+  background-size: 300% 100%;
   background-position: 100%;
   font-weight: 600;
   padding: 15px 35px;
@@ -188,14 +231,29 @@ main {
   transition: all 0.3s cubic-bezier(0, 0, 0, 1);
   background-position: 0%; }
 
+.card a.custom-btn:hover {
+  color: #fff !important; }
+
 img.social-icon {
   width: 30px; }
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
 
 .box-shadow {
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1); }
 
 .rounded-15px {
-  border-radius: 15px; }
+  border-radius: 15px !important; }
+
+ol.breadcrumb li.breadcrumb-item > a {
+  color: #000;
+  font-weight: 500; }
+
+ol.breadcrumb li.breadcrumb-item.active {
+  color: #00457c;
+  font-weight: 500; }
 
 header .custom-btn {
   padding: 10px 35px; }
@@ -407,3 +465,60 @@ footer {
 
 .wish-bricks figure:hover:before {
   background-color: rgba(0, 67, 122, 0.3); }
+
+.team ul.nav.nav-tabs li.nav-item {
+  border: 1px solid #f3f3f3; }
+
+.team ul.nav.nav-tabs li.nav-item > a {
+  border-radius: 0;
+  margin: 0;
+  color: #000;
+  font-weight: 500;
+  background-color: #fff; }
+
+.team ul.nav.nav-tabs li.nav-item:first-child > a {
+  border-radius: 25px 0 0 25px; }
+
+.team ul.nav.nav-tabs li.nav-item:last-child > a {
+  border-radius: 0 25px 25px 0; }
+
+.team ul.nav.nav-tabs li.nav-item > a.active, .team ul.nav.nav-tabs li.nav-item > a:hover {
+  color: #fff;
+  background-color: #f29200; }
+
+.payments form label.form-check-label {
+  font-size: 0.8em;
+  font-weight: 600; }
+
+.current-challengers {
+  background-image: url("../assets/backgrounds/background_challenge.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .current-challengers ul > li {
+    font-size: 0.9em;
+    margin-bottom: 5px !important; }
+
+.faqs .accordion .card .card-header {
+  position: relative; }
+  .faqs .accordion .card .card-header button {
+    font-size: 1.1em;
+    padding: 0; }
+  .faqs .accordion .card .card-header i.fa {
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f29200;
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+.faqs .accordion .card [data-toggle="collapse"] .fa:before {
+  content: "\f067"; }
+
+.faqs .accordion .card [data-toggle="collapse"].collapsed .fa:before {
+  content: "\f068"; }

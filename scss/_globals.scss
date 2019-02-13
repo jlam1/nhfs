@@ -5,6 +5,43 @@ main {
 	// margin-top: 110px;
 	transition: margin-top 0.3s ease-in-out;
 }
+/**   Line-Height   */
+.lh-1e {
+	line-height: 1em !important;
+}
+.lh-1e1 {
+	line-height: 1.1em !important;
+}
+.lh-1e2 {
+	line-height: 1.2em !important;
+}
+.lh-1e3 {
+	line-height: 1.3em !important;
+}
+.lh-1e4 {
+	line-height: 1.4em !important;
+}
+.lh-1e5 {
+	line-height: 1.5em !important;
+}
+.lh-1e6 {
+	line-height: 1.6em !important;
+}
+.lh-1e7 {
+	line-height: 1.7em !important;
+}
+.lh-1e8 {
+	line-height: 1.8em !important;
+}
+.lh-2e {
+	line-height: 2em !important;
+}
+.lh-2e1 {
+	line-height: 2.1em !important;
+}
+.lh-2e5 {
+	line-height: 2.5em !important;
+}
 .bg-primary {
 	background-color: $color-primary!important;
 }
@@ -13,6 +50,9 @@ main {
 }
 .bg-muted {
 	background-color: $color-muted!important;
+}
+.bg-gray {
+	background-color: #E9EAEC!important;
 }
 .bg-transparent {
 	background-color: transparent!important;
@@ -46,6 +86,9 @@ main {
 .underline-custom.underline-default:after {
 	background-color: #fff;
 }
+.underline-custom.underline-dark:after {
+	background-color: #000;
+}
 .underline-custom.underline-primary:after {
 	background-color: $color-primary;
 }
@@ -59,10 +102,10 @@ main {
 
 /* BUTTONS */
 .custom-btn {
-	border-radius: 25px;
+	border-radius: 50px;
 	border: 0;
 	transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
-	background-size: 200% 100%;
+	background-size: 300% 100%;
 	background-position: 100%;
 	font-weight: 600;
 	padding: 15px 35px;
@@ -74,9 +117,17 @@ main {
 	transition: all 0.3s cubic-bezier(0, 0, 0, 1);
 	background-position: 0%;
 }
+.card a.custom-btn:hover {
+	color: #fff!important;
+}
 
 img.social-icon {
 	width: 30px;
+}
+
+.grayscale {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 .box-shadow {
@@ -84,9 +135,25 @@ img.social-icon {
 }
 
 .rounded-15px {
-	border-radius: 15px;
+	border-radius: 15px!important;
 }
 
+ol.breadcrumb {
+	li.breadcrumb-item > a {
+		color: #000;
+		font-weight: 500;
+	}
+	li.breadcrumb-item.active {
+		color: $color-primary;
+		font-weight: 500;
+	}
+}
+
+// ul.fa-ul {
+// 	li > i {
+// 		color: $color-primary;
+// 	}
+// }
 
 @media screen and (max-width: $break-md) {
 	// main {
